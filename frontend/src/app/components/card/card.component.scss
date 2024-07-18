@@ -1,0 +1,33 @@
+.card-text {
+  font-size: 1em;
+  font-weight: 500;
+  color: #9a9899;
+  margin: 0;
+  padding: 0;
+}
+.card-footer button {
+  font-size: 11px;
+}
+.card {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border-radius: 15px;
+}
+
+.card:hover {
+  background-color: #313131 !important;
+}
+
+.btn-sm {
+  background-color: #437099;
+  border-radius: 15px;
+  width: 25%;
+}
+
+
+@media (max-width: 768px) {
+
+  .card-footer button {
+      font-size: 12px;
+  }
+}

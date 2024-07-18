@@ -1,0 +1,30 @@
+<div class="card" style="width: 20rem;">
+    <div class="card-header" >{{ word.serbian_word }} - {{ word.english_word }}</div>
+    <div class="card-body">
+      <p class="card-text description">{{ word.description }}</p>
+    </div>
+    <div class="card-footer">
+      <a  class="btn btn-primary" style="background-color: #437099;" (click)="openModal(word)">Read more...</a>
+
+    </div>
+  </div>
+
+  
+  <ng-template #WordModal let-modal>
+    <div class="modal-header">
+      <h5 class="modal-title" id="exampleModalLongTitle" style="color: #09375c">
+        {{selectedWord?.serbian_word}} - {{selectedWord?.english_word}}
+      </h5>
+    </div>
+    <div class="modal-body">
+      <p>{{selectedWord?.description}}</p>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" (click)="modal.close('Close click')">
+        <i class="fa fa-times" style="color: white; background-color: #6c757d"></i>
+        Zatvori
+      </button>
+     
+      
+    </div>
+  </ng-template>

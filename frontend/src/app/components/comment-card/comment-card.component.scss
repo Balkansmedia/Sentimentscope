@@ -1,0 +1,171 @@
+.card {
+  background-color: #191919;
+  color: white;
+  border-radius: 15px;
+  padding: 5px;
+  max-width: 23rem;
+}
+
+.card-header {
+  display: block;
+
+  border-bottom: 0.5px solid white !important;
+  border-bottom-style: dotted !important;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.timestamp {
+  font-size: 0.8em;
+  color: #adafb2;
+}
+
+.card-body {
+  font-size: 0.9em;
+  border-bottom: 0.1px solid #6c757d !important;
+  border-bottom-style: solid !important;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: all 0.3s ease;
+}
+
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 10px;
+  margin-top: 0 !important;
+  margin: 4px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center !important;
+  place-items: center !important;
+}
+
+.icon-btn.alert {
+  background-color: #e62537;
+}
+.icon-btn.lightning {
+  background-color: #f0a008;
+}
+.icon-btn.close {
+  background-color: #565656;
+}
+.icon-btn.check {
+  background-color: #31aa46;
+}
+
+.card {
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+}
+.button-group {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.change-label {
+  margin-left: auto;
+  border-radius: 50px;
+  color: white;
+  margin-right: 7px;
+  font-weight: bold;
+  background-color: #f0a008; 
+  margin-right: 20px;
+  height: 30px;
+  width: 30px;
+}
+
+.icon-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 10px;
+  margin: 4px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-btn.alert {
+  background-color: #e62537;
+}
+
+.icon-btn.check {
+  background-color: #31aa46;
+}
+
+.icon-btn:hover {
+  opacity: 0.8;
+}
+.read-more {
+  width: 80px;
+  float: right;
+  margin-right: -10px;
+  background: none;
+  border: none;
+  color: #f0a008;
+  cursor: pointer;
+  font-size: 0.8em;
+  margin-top: 10px;
+  text-decoration: underline;
+  text-align: left;
+  padding: 0;
+  margin-bottom: -10px; 
+}
+
+
+.card-text.expanded {
+  display: block;
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+  float: right;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: auto;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.7em;
+}
+
+.tooltip-wrapper:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}

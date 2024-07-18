@@ -1,0 +1,21 @@
+<div class="card text-white mb-3" style="max-width: 23rem; background-color: #464646 ">
+  <div class="card-body">
+    <h5 class="card-title" style="white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%;">
+      {{Article.title}}</h5>
+    <p class="card-text" style="max-height: 3.0em; overflow: hidden; text-overflow: ellipsis; ">{{Article.content}}</p>
+  </div>
+  <div class="card-footer bg-transparent d-flex" style="justify-content: space-around">
+    <button type="button" class="btn btn-primary btn-sm">
+      <i class="fa fa-user"></i>
+     {{Article.category}}
+    </button>
+    <button type="button" class="btn btn-primary btn-sm">
+      <i class="fa fa-comment-o"></i>
+      {{Article.noOfComments}}
+    </button>
+    <button type="button" class="btn btn-primary btn-sm">
+      <i class="fa  fa-flag-o"></i>
+      {{Article.noOfSaves}}
+    </button>
+  </div>
+</div>

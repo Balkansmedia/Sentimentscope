@@ -1,0 +1,36 @@
+@import "./assets/variables";
+@import 'ngx-toastr/toastr';
+
+html,
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background: $app-bg-gradient;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.app-nav-link {
+  color: $app-white;
+  text-decoration: none;
+  padding: 0.5rem 2rem;
+  border-radius: 0.5rem 0.5rem 0 0;
+  transition: background 0.3s ease;
+  display: inline-block;
+}
+
+.app-nav-active {
+  background-color: $app-primary;
+}
+
+.app-nav-link:hover {
+  background-color: $app-primary-light;
+}

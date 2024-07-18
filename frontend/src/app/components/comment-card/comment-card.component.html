@@ -1,0 +1,31 @@
+<div  class="card">
+  <div class="card-header">
+    <div class="username">{{comment.username}}</div>
+    <div class="timestamp">{{formatDate(comment.timestamp)}}</div>
+  </div>
+
+  <div class="card-body">
+    <p class="card-text" [class.expanded]="isExpanded">
+      {{ comment.content }}
+    </p>
+    <button class="btn read-more" (click)="toggleReadMore()">
+      {{ isExpanded ? 'Show less' : 'Read more' }}
+    </button>
+  </div>
+
+
+  <div class="button-group" style="margin-left: 3%">
+    <button class="btn icon-btn alert" *ngIf="comment.label==='malicious'">
+      <i class="fa fa-exclamation-triangle"></i>
+    </button>
+    <button class="btn icon-btn check" *ngIf="comment.label === 'good'">
+      <i class="fa fa-check-square-o"></i>
+    </button>
+    <div class="tooltip-wrapper">
+      <button class="btn  change-label lightning" (click)="changeLabel()">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+      </button>
+      <span class="tooltip-text">Change</span>
+    </div>
+  </div>
+</div>

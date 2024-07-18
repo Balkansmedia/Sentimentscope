@@ -1,0 +1,38 @@
+<div class="container-fluid" style="margin-left: 20px">
+  <header class="">
+    <h4 class="text-white" style="margin-bottom: 15px; margin-top: 10px">
+      <b>SENTIMENT</b><span style="color: #2fb7ba">Scope</span>
+    </h4>
+
+    <nav class="d-flex">
+      <a
+        routerLink="/"
+        routerLinkActive="app-nav-active"
+        [routerLinkActiveOptions]="{ exact: true }"
+        class="app-nav-link"
+        >Home</a
+      >
+      <a
+        routerLink="/analytics"
+        routerLinkActive="app-nav-active"
+        class="app-nav-link"
+        >Analytics</a
+      >
+      <a
+        routerLink="/vocabulary"
+        routerLinkActive="app-nav-active"
+        class="app-nav-link"
+        >Vocabulary</a
+      >
+    </nav>
+  </header>
+</div>
+<hr style="color: white; margin-top: 0" />
+
+<div class="container-fluid" style="height: 100%">
+  <div class="row" style="height: 100%">
+    <div class="col-12" style="height: 100%">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

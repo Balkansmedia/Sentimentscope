@@ -15,7 +15,7 @@ project-root/
 │   └── (Angular application files)
 ├── backend/
 │   └── (FastAPI application files)
-├── model/
+├── ai-model/
 │   └── (AI model training and generation scripts)
 └── README.md
 ```
@@ -108,9 +108,9 @@ This directory contains scripts for training and generating an AI model for text
    ```
 5. Train the model:
    ```sh
-   python train_model.py
+   python classificator-real-data.py
    ```
-6. The trained model will be saved in the `models` directory.
+6. The trained model will be saved in the `ai-model` directory as a joblib extension that can be integrated into backend. 
 
 ## How to Use
 
@@ -121,11 +121,3 @@ This directory contains scripts for training and generating an AI model for text
 3. **Generate/Use AI Model**:
    - To train a new model, follow the steps in the [AI Model Generation](#ai-model-generation) section.
    - Ensure the trained model is accessible to the backend for making predictions.
-
-### Example Usage
-
-- Open the Angular application in your browser.
-- Use the interface to input text data.
-- The frontend sends a request to the FastAPI backend.
-- The backend processes the request, uses the AI model to make predictions, and returns the results to the frontend.
-- The frontend displays the prediction results to the user.
